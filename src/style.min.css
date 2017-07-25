@@ -6641,6 +6641,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+#LayOut .navbar .header, #home .btn-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex; }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -6650,8 +6655,70 @@ a {
   a:hover {
     text-decoration: none; }
 
+#LayOut {
+  padding-top: 70px; }
+  #LayOut .navbar {
+    padding: 0;
+    background-color: #3cf2bb;
+    color: #fff; }
+    #LayOut .navbar .header {
+      height: 70px;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center; }
+      #LayOut .navbar .header .brand {
+        font-size: 30px;
+        color: #000;
+        font-weight: bold; }
+
 #home {
-  background-size: cover;
-  background-repeat: no-repeat; }
+  width: 100%;
+  height: calc(100vh - 70px);
+  padding: 20px 0; }
+  #home .leaflet-container {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto; }
+  #home .text-center b {
+    color: #3cf2bb; }
+  #home .text-center.report b {
+    color: #d9534f; }
+  #home .btn-container {
+    height: 20%;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center; }
+    #home .btn-container button {
+      color: #fff;
+      background-color: #3cf2bb;
+      font-weight: bold;
+      width: 30%;
+      margin: 0 2%;
+      height: 40%;
+      padding: 8px;
+      -webkit-transition: 1.5s;
+      -moz-transition: 1.5s;
+      -ms-transition: 1.5s;
+      -o-transition: 1.5s;
+      transition: 1.5s;
+      cursor: pointer; }
+      #home .btn-container button:hover {
+        color: #000; }
 
 /*# sourceMappingURL=style.min.css.map */

@@ -1,0 +1,22 @@
+#LayOut {
+  padding-top: $header-height;
+
+  .navbar {
+    padding: 0;
+    background-color: $toska;
+    color: $light-font;
+
+    .header {
+      height: $header-height;
+      @extend %flex;
+      @include prefix(align-items, center);
+      @include prefix(justify-content, center);
+
+      .brand {
+        font-size: 30px;
+        color: $dark-font;
+        font-weight: bold;
+      }
+    }
+  }
+}

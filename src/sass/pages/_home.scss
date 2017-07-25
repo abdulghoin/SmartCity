@@ -1,4 +1,49 @@
 #home {
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: $content-page-height;
+  padding: 20px 0;
+
+  .leaflet-container {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .text-center {
+    b {
+      color : $toska;
+    }
+
+    &.report {
+      b {
+        color: $red;
+      }
+    }
+  }
+
+  .btn-container {
+    height: 20%;
+    width: 80%;
+    margin: 0 auto;
+    @extend %flex;
+    @include prefix(align-items, center);
+    @include prefix(justify-content, center);
+
+    button {
+      color: $light-font;
+      background-color: $toska;
+      font-weight: bold;
+      width: 30%;
+      margin: 0 2%;
+      height: 40%;
+      padding: 8px;
+      @include prefix(transition, 1.5s);
+      cursor: pointer;
+
+      &:hover {
+        color: $dark-font;
+      }
+
+    }
+  }
 }
