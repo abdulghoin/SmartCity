@@ -6,13 +6,13 @@ import {Router, Route, IndexRoute, IndexRedirect, browserHistory} from 'react-ro
 import { syncHistoryWithStore, routerReducer, push } from 'react-router-redux'
 
 // import Store
-import store from "./store"
+import store from "store"
 
 // import LayOut
-import LayOut from './layout/'
+import LayOut from 'LayOut'
 
 // import Pages
-import Home from './pages/Home'
+import Home from 'Home'
 
 // DOM
 const app = document.getElementById('app');

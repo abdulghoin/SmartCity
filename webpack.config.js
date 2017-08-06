@@ -1,4 +1,4 @@
-var debug   = true;
+var debug   = false;
 var webpack = require('webpack');
 var path    = require('path');
 
@@ -8,6 +8,19 @@ module.exports = {
   output: {
     path: __dirname + '/src/',
     filename: 'app.min.js'
+  },
+  resolve: {
+    // root: __dirname,
+    modules: [
+      'node_modules',
+      'src/js',
+      'src/js/actions',
+      'src/js/components',
+      'src/js/layout',
+      'src/js/pages',
+      'src/js/reducers'
+    ],
+    extensions: ['.js', '.jsx']
   },
   module: {
     loaders: [

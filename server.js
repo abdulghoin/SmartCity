@@ -4,7 +4,7 @@ var express = require('express');
 // Create our app
 var app = express();
 
-app.use(express.static('public'));
+app.use(express.static('src'));
 
 // handle every other route with index.html, which will contain
 // a script tag to your application's JavaScript file(s).

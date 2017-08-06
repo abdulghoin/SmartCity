@@ -5,7 +5,7 @@ import {Map, Marker, Popup, TileLayer, Icon} from 'react-leaflet'
 import {connect} from 'react-redux'
 
 // import Actions
-import {getLocation, getReport} from '../actions/dataActions'
+import {getLocation, getReport} from 'dataActions'
 
 // import Stores
 @connect((store)=>{
